@@ -1,0 +1,182 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+/*Nav Overall*/
+.navArea{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	position:fixed;
+	min-height:90px;
+	margin-bottom:0px;
+	border:0px solid transparent;
+	/*background-color:#000;*/
+	background: -webkit-linear-gradient(#222, rgba(255, 255, 255, 0));
+	border-color:#131313;
+	border-radius:0px;
+	z-index:999;
+	width:100%;
+	top:0px;
+}
+
+/*Nav Parallax Animation*/
+
+.navArea{
+    animation-name: nav;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;   
+}
+
+
+@-webkit-keyframes nav {
+    0%   {top:-20px;}
+    100%  {top:0px;}
+}
+
+/*Nav Left*/
+.logo{
+	float:left;
+	line-height:15px;
+	margin-top:9px;
+	margin-left:20px;
+}
+
+.logo>img{
+	height:70%;
+	width:70%;
+}
+
+@media screen and (max-width:1080px){
+	
+	.logo>img{
+	    height:60%;
+		width:60%;
+	}
+
+}
+
+@media screen and (max-width:720px){
+    
+	.navArea{
+		position:relative;
+	    background:#333;
+	}
+	
+	.logo>img{
+	    height:50%;
+		width:50%;
+	}
+
+}
+
+@media screen and (max-width:480px){
+    
+	
+	.logo>img{
+	    height:40%;
+		width:40%;
+	}
+
+}
+
+/*Nav Right*/
+.navS{
+	list-style:none;
+	margin:0;
+	float:right!important;
+	margin-right:35px;
+	padding-left:0;
+}
+
+.navS>li{
+	position:relative;
+	float:left;
+	margin-right:35px;
+	margin-top:35px;
+}
+
+.navS>li>a{
+	text-decoration:none;
+	display:block;
+	color:#c1c1c1;
+	font-size:16px;
+}
+
+.navS>li>a:hover{
+	color:#f0f0f0;
+}
+
+@media screen and (max-width:720px){
+	
+	.navS{
+		background:#333;
+		margin-right:5px;
+		margin-top:-45px;
+	}
+    
+    .navS>li>a{
+	    font-size:10px;
+	}
+
+}
+
+@media screen and (max-width:480px){
+    	.navS{
+		background:#333;
+		margin-right:0px;
+		margin-top:-45px;
+	    }
+		
+		.navS>li{
+		margin-bottom:10px;
+	    }
+}
+
+/*Search Bar*/
+.sBar{
+	text-align:center;
+	width:100%;
+	padding-top:28px;
+}
+
+.sBar>form>input{
+    border:none;
+	background:rgba(0, 0, 0, 0.2);
+	font-size:16px;
+	color:#a4a4a4;
+	height:40px;
+	width:890px;
+	padding-left:15px;
+	font-weight:bold;
+}
+
+.sBar>form>input:hover{
+	box-shadow:0px 0px 0px 1px #fff;
+}
+
+@media screen and (max-width:1680px){
+    .sBar>form>input{
+	    width:600px;
+	}
+}
+
+@media screen and (max-width:1530px){
+
+    .sBar>form>input{
+		width:100%;
+	}
+
+}
+
+@media screen and (max-width:720px){
+
+    
+    .sBar>form>input{
+	    font-size:10px;
+		width:100%;
+		height:30px;
+		position:relative;
+	}
+
+}
