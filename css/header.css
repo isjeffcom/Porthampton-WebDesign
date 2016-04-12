@@ -3,11 +3,11 @@
 	padding:0;
 	-moz-user-select:none;
 	-webkit-user-select: none;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 /*Nav Overall*/
 .navArea{
-	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 	position:fixed;
 	min-height:90px;
 	margin-bottom:0px;

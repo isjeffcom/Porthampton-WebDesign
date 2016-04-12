@@ -4,7 +4,7 @@
     animation-name: carousel;
     animation-duration: 0.9s;
     animation-iteration-count: 1;
-    animation-direction: alternate;   
+    animation-direction: alternate;
 }
 
 
@@ -251,84 +251,71 @@
 /*CATEGORIES AREA*/
 
 .categories{
-    
-	width:100%;
+
 	font-family:Arial, sans-serif;
 	font-size:16px;
 	font-weight: 700;
 	color:#fff;
 	text-align: center;
-	
+	position:relative;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+
+
 }
-
-
-
 
 /** Scale Caption :hover Behaviour **/
 
 .box{
-    
 	float:left;
-	
 	/*Calculate width*/
-    width:calc(100% / 10);
+  width:calc(100% / 10);
+  height:100%;
+  background-color:#333333;
+}
+
+.box>a>img {
+	width:100%;
+  height:100%;
+}
+
+.box:hover>a>img {
+
+	-webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+
 }
 
 .box>p {
-    position:relative;
-	margin-top:-60px;
+  background-color:#5c83db;
+  position:relative;
+	bottom:0px;
+  font-size:10px;
 	opacity:0;
 }
 
 .box:hover>p{
-    
+
     /*Show*/
     opacity:1;
-    
+
     /*Animation Timer*/
     -webkit-transition: all 150ms ease-out;
-	transition: all 150ms ease-out;
+    -moz-transition: all 150ms ease-out;
+    -ms-transition: all 150ms ease-out;
+  	transition: all 150ms ease-out;
 
-	/*Enlarge Animation*/
-	-webkit-transform: cale(1.3);
-	transform: scale(1.3);
-	
-	text-shadow: 0.5px 0.5px 5px #333;
-	
-	cursor: pointer;
+  	/*Enlarge Animation*/
+  	-webkit-transform: cale(1.3);
+  	-moz-transform: cale(1.3);
+  	-ms-transform: cale(1.3);
+  	transform: scale(1.3);
+
+  	/*text-shadow: 0.5px 0.5px 5px #333;*/
+
+  	/*When mouse move upon text change to Pointer*/
+  	cursor: pointer;
 }
-
-
-
-.box>a>img{
-
-    width:100%;
-
-
-}
-
-.box:hover>a>img {
-    
-	/*Animtation Timer*/
-	-webkit-transition: all 150ms ease-in-out;
-	-moz-transition: all 150ms ease-in-out;
-	transition: all 150ms ease-in-out;
-	
-	/*Enlarge Animation*/
-	-moz-transform: scale(1.3);
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
-	
-	/*Blur Animation*/
-	-webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    filter: blur(2px);
-
-}
-
-
-
-
-
-
-

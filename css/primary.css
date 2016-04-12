@@ -1,0 +1,73 @@
+.primary{
+	position:relative;
+}
+
+
+.primary a{
+	text-decoration: none;
+	color:#676767;
+}
+
+.pLeft{
+	width:70%;
+	height:100%;
+	position:relative;
+	float:left;
+	left:0px;
+	background-color:#F0F0F0;
+}
+
+.plTitle{
+	text-align: center;
+	position:relative;
+
+}
+
+.plTitle>a{
+
+	font-size:20px;
+
+}
+
+.plpicflow{
+
+	width:720px;
+	height:605px;
+	overflow: hidden;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+.plpicbig>img{
+	width:720px;
+	height:405px;
+}
+
+.plpicin{
+	width:720px;
+	display:inline;
+}
+
+.plpicin>img{
+	width:320px;
+	height:180px;
+	margin-top:10px;
+}
+
+.plpicin1{
+	left:0px;
+}
+
+.plpicin2{
+	margin-right:0px;
+}
+
+.pRight{
+	width:30%;
+	height:100%;
+	position: relative;
+	float:right;
+	right:0px;
+	background-color:#F5F5F5;
+}
