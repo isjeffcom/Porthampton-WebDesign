@@ -1,6 +1,14 @@
+li{
+	list-style-type: none;
+}
+
+
+
 .primary{
 	position:relative;
+	overflow: hidden;
 }
+
 
 
 .primary a{
@@ -34,33 +42,74 @@
 	width:720px;
 	height:605px;
 	overflow: hidden;
+	margin-top:20px;
 	margin-left:auto;
 	margin-right:auto;
 
 }
 
-.plpicbig>img{
+.plpicbig>a>img{
 	width:720px;
 	height:405px;
+
+	/*Animation Timer*/
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-ms-transition: all 150ms ease-out;
+	transition: all 150ms ease-out;
+}
+
+.plpicbig:hover >a>img{
+
+	/*Enlarge Animation*/
+	-webkit-filter: grayscale(80%);
+	filter:grayscale(80%);
 }
 
 .plpicin{
-	width:720px;
-	display:inline;
+	width:100%;
+	margin-top:14px;
 }
 
-.plpicin>img{
-	width:320px;
+.plpicin>a>img{
+	width:calc(100% / 2.05);
 	height:180px;
-	margin-top:10px;
+	margin:0px;
 }
+
 
 .plpicin1{
-	left:0px;
+	float:left;
+
+	/*Animation Timer*/
+	-webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	-ms-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+
+
+.plpicin1:hover{
+	/*Enlarge Animation*/
+	-webkit-filter: grayscale(80%);
+	filter:grayscale(80%);
 }
 
 .plpicin2{
-	margin-right:0px;
+	float:right;
+	/*Animation Timer*/
+	-webkit-transition: all 350ms ease-in-out;
+	-moz-transition: all 350ms ease-in-out;
+	-ms-transition: all 350ms ease-in-out;
+	transition: all 350ms ease-in-out;
+}
+
+.plpicin2:hover{
+
+
+	/*Enlarge Animation*/
+	-webkit-filter: grayscale(80%);
+	filter:grayscale(80%);
 }
 
 .pRight{
@@ -69,5 +118,44 @@
 	position: relative;
 	float:right;
 	right:0px;
-	background-color:#F5F5F5;
+	background-color:#E8E8E8;
+}
+
+.prTitle{
+	margin-top:54px;
+	color:#686868 !important;
+	margin-left:10px;
+}
+
+.rpic{
+	margin-left:70px;
+}
+
+.rpic>a>img{
+	width:70%;
+	overflow: hidden;
+	margin-top:40px;
+
+	/*Animation Timer*/
+	-webkit-transition: all 350ms ease-in-out;
+	-moz-transition: all 350ms ease-in-out;
+	-ms-transition: all 350ms ease-in-out;
+	transition: all 350ms ease-in-out;
+
+}
+
+.rpic:hover >a>img{
+
+	-webkit-filter: invert(80%);
+	filter:invert(80%);
+
+}
+
+.top10channel{
+	margin-left:70px;
+}
+
+.top10channel>a>li{
+	font-weight:600;
+	color:#676767;
 }

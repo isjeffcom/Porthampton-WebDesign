@@ -1,8 +1,9 @@
 .footer{
-    background:#222;
+  background:#222;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 	position:relative;
 	min-height:130px;
+  margin-top:60px;
 	margin-bottom:0px;
 }
 
@@ -49,25 +50,25 @@
 }
 
 @media screen and (max-width:720px){
-    
+
 	.footer{
 	    position:fixed;
 		width:100%;
 	}
-	
+
 	.footerRight>li{
 	padding-left:5px;
     }
-	
+
 	.footerRight>li>a{
 	    font-size:10px;
 		margin:0;
 	}
-	
+
 	.footerSocial>li{
 	    padding-left:20px;
 	}
-	
+
 	.footerSocial>li>a>img{
         width:30%;
 	    height:30%;

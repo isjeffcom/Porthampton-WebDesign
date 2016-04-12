@@ -27,7 +27,7 @@
     animation-name: nav;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
-    animation-direction: alternate;   
+    animation-direction: alternate;
 }
 
 
@@ -50,7 +50,7 @@
 }
 
 @media screen and (max-width:1080px){
-	
+
 	.logo>img{
 	    height:60%;
 		width:60%;
@@ -59,12 +59,12 @@
 }
 
 @media screen and (max-width:720px){
-    
+
 	.navArea{
 		position:relative;
 	    background:#333;
 	}
-	
+
 	.logo>img{
 	    height:50%;
 		width:50%;
@@ -73,8 +73,8 @@
 }
 
 @media screen and (max-width:480px){
-    
-	
+
+
 	.logo>img{
 	    height:40%;
 		width:40%;
@@ -110,13 +110,13 @@
 }
 
 @media screen and (max-width:720px){
-	
+
 	.navS{
 		background:#333;
 		margin-right:5px;
 		margin-top:-45px;
 	}
-    
+
     .navS>li>a{
 	    font-size:10px;
 	}
@@ -129,7 +129,7 @@
 		margin-right:0px;
 		margin-top:-45px;
 	    }
-		
+
 		.navS>li{
 		margin-bottom:10px;
 	    }
@@ -173,7 +173,7 @@
 
 @media screen and (max-width:720px){
 
-    
+
     .sBar>form>input{
 	    font-size:10px;
 		width:100%;
